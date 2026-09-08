@@ -1,5 +1,36 @@
 package model;
 
-public class Reastournt {
+import java.util.List;
 
+public class Reastournt {
+   
+private	int id;
+private	String name;
+private	String Address;
+private	List<Menu> menu;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	public List<Menu> getMenu() {
+		return menu;
+	}
+	public void setMenu(List<Menu> menu) {
+		this.menu = menu;
+	}
+	
 }
