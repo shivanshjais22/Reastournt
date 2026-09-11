@@ -22,16 +22,16 @@ private static Reastourant_Manager instance = null;
       return instance;
   }
   
-   void Add_Reastiurant(Reastournt r) {
+   public void Add_Reastiurant(Reastournt r) {
 	   reastournt.add(r);
    }
   
-   void Remove_Reastiurant(Reastournt r) {
+  public void Remove_Reastiurant(Reastournt r) {
 	   reastournt.remove(r);
    }
    
  
-  List<Reastournt>SearchByloaction(String loc){
+ public  List<Reastournt>SearchByloaction(String loc){
 	  List<Reastournt>result=new ArrayList<>();
 	  loc=loc.toLowerCase();
 	  for(Reastournt i: reastournt) {

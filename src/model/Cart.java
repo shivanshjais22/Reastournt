@@ -6,6 +6,11 @@ import java.util.List;
 public class Cart {
 private  Reastournt reastourant;
 private  List<Menu>menu;
+public List<Menu> getMenu() {
+	return menu;
+}
+
+
 public Cart(List<Menu> menu) {
 	super();
 	reastourant=null;
@@ -45,7 +50,7 @@ public void setMenu(List<Menu> menu) {
 }
 
 
-double Totalprice() {
+public double Totalprice() {
 	  double total=0;
 	  for(Menu m:menu) {
 		  total+=m.getPrice();
@@ -53,7 +58,7 @@ double Totalprice() {
 	  return total;
   }
   
-  Boolean Isempty() {
+ public Boolean Isempty() {
 	  if(menu.isEmpty() || reastourant==null) return false;
 	  return true;
   }
